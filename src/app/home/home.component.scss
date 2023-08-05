@@ -1,8 +1,17 @@
 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  &__icon {}
+  &__icon {
+    width: 7rem;
+  }
 
   &__link-container {}
 
   &__link {}
+}
+
+.main {
+
 }
