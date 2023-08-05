@@ -1,0 +1,36 @@
+<div class="carousel">
+  <div class="carousel__left">
+
+    <div class="carousel__text-box">
+      <h1 class="carousel__text">PROJECT</h1>
+      <p class="carousel__text-light">HOME</p>
+    </div>
+
+    <div class="carousel__btn-box">
+      <button class="carousel__btn u-margin-right-medium" (click)="minus()" (click)="slickModal.slickPrev()"><img
+          src="/assets/photo/left.png" class="carousel__btn-img" alt="arrow left">
+      </button>
+      <button class="carousel__btn" (click)="plus()" (click)="slickModal.slickNext()"><img src="/assets/photo/right.png"
+          class="carousel__btn-img" alt="arrow right"></button>
+      <span class="carousel__btn-line"></span>
+    </div>
+
+    <div class="carousel__counter-box">
+      <div class="carousel__counter-left u-margin-right-big">{{counter | number: '2.0'}}</div>
+      <span class="carousel__slash"></span>
+      <div class="carousel__counter-right">{{slides.length | number: '2.0'}}</div>
+    </div>
+  </div>
+
+  <div class="carousel__right">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img src="{{ slide.img }}" alt="" class="carousel__photo">
+      </div>
+    </ngx-slick-carousel>
+    <div class="carousel__right-box">
+      <p class="carousel__btn-text">ВЗГЛЯНУТЬ</p>
+      <button class="carousel__right-btn"><img src="/assets/photo/right.png" class="carousel__btn-img carousel__btn-img--right" alt="arrow right"></button>
+    </div>
+  </div>
+</div>

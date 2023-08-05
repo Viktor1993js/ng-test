@@ -1,0 +1,190 @@
+<div class="header">
+  <img src="assets/photo/logo.png" class="header__icon">
+  <div class="header__link-container">
+    <a href="#" *ngFor="let link of links" class="header__link">{{link.title | uppercase}}</a>
+  </div>
+</div>
+
+<div class="main">
+
+  <app-carousel></app-carousel>
+
+  <div class="about">
+    <div class="about__photo-box-one">
+      <img src="assets/photo/Rectangle 8.png" alt="photo" class="about__photo-one">
+      <img src="assets/photo/Rectangle 10.png" alt="photo" class="about__photo-three">
+    </div>
+    <div class="about__photo-box-two">
+      <img src="assets/photo/Rectangle 9.png" alt="photo" class="about__photo-two">
+    </div>
+    <div class="about__text-box">
+      <h1 class="about__text">О компании</h1>
+      <p class="about__text-other">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, alias! Dolor
+        consectetur iste ipsam eveniet
+        saepe quos omnis dolorem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, alias! Dolor
+        consectetur iste ipsam eveniet
+        saepe quos omnis dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, alias! Dolor
+        consectetur iste ipsam eveniet
+        saepe quos omnis dolorem.</p>
+      <div class="btn">
+        <button class="btn__main">
+          <p class="btn__text">ЧИТАТЬ</p>
+          <span class="material-icons-outlined">
+            east
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="header-large u-margin-top-very-huge">Основные задачи</h1>
+
+  <div class="tasks">
+    <div class="tasks__box" *ngFor="let item of tasks">
+      <span class="tasks__number">{{item.id}}</span>
+      <p class="tasks__text" [style.max-width]="item.width">
+        {{item.title}}
+      </p>
+    </div>
+  </div>
+
+  <h1 class="header-large u-margin-top-huge u-margin-bottom-huge">Наши проекты</h1>
+
+  <div class="project">
+    <div class="project__box" *ngFor="let item of projects">
+      <div class="project__main-container u-margin-bottom-large" (mouseenter)="item.active = true"
+        (mouseleave)="item.active = false" [style.background-image]="getSafeUrl(item.url)" alt="photo"
+        [ngClass]="item.style">
+        <div class="project__container" appActive>
+          <div class="project__center">
+            <div *ngIf="item.active">
+              <p class="project__text" [ngClass]="item.textSize">{{item.title}}</p>
+              <div class="btn u-margin-top-small">
+                <button class="btn__main btn__main--transparent">
+                  <p class="btn__text btn__text--white">ПОДРОБНЕЕ</p>
+                  <span class="material-icons-outlined" [style.color]="'white'">
+                    east
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="project-btn">
+    <div class="btn">
+      <button class="btn__main btn__main--black">
+        <p class="btn__text btn__text--white">ВСЕ ПРОЕКТЫ</p>
+        <span class="material-icons-outlined" [style.color]="'white'">
+          east
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <h1 class="header-large u-margin-top-huge">Связаться с нами</h1>
+
+  <div class="form">
+    <div class="form__box">
+      <form class="form__main" action="" [formGroup]="myForm">
+        <div class="form__container">
+          <input class="form__control" type="text" name="name" placeholder="Имя" formControlName="userName">
+        </div>
+        <div class="form__container">
+          <input class="form__control" type="text" name="name" placeholder="Номер телефона" formControlName="userPhone">
+          <span class="form__pointer-phone" [hidden]="myForm.controls['userPhone'].valid">*</span>
+        </div>
+        <div class="form__container">
+          <input class="form__control" type="text" name="name" placeholder="E-mail" formControlName="userEmail">
+          <span class="form__pointer-email" [hidden]="myForm.controls['userEmail'].valid">*</span>
+        </div>
+        <div class="form__container">
+          <input class="form__control" type="text" name="name" placeholder="Интерисующий товар/услуга"
+            formControlName="userProduct">
+        </div>
+        <div class="form__container form__container--large">
+          <input class="form__control" type="text" name="name" placeholder="Сообщение" formControlName="userMessage">
+          <span class="form__pointer-message" [hidden]="myForm.controls['userMessage'].valid">*</span>
+          <span class="material-symbols-outlined u-margin-top-medium">
+            check_small
+          </span>
+        </div>
+      </form>
+    </div>
+    <div class="form__photo-box">
+      <img class="form__photo" src="assets/photo/image 12.png" alt="photo forms" width="500rem">
+    </div>
+  </div>
+
+  <div class="form-btn">
+    <p class="form-btn__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+    <div class="btn">
+      <button class="btn__main btn__main--black">
+        <p class="btn__text btn__text--white">ОТПРАВИТЬ</p>
+        <span class="material-icons-outlined" [style.color]="'white'">
+          east
+        </span>
+      </button>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<div class="footer">
+  <div class="footer__top">
+    <div class="footer__img-box"><img class="footer__img" src="assets/photo/Group 11 1.png" alt="Footer-logo"></div>
+    <div class="footer__links">
+      <h2 class="heading-two">Информация</h2>
+      <a class="footer__link" href="#" *ngFor="let item of links">{{item.title}}</a>
+    </div>
+    <div class="footer__contacts-box">
+      <h2 class="heading-two">Контакты</h2>
+      <div class="footer__contacts u-margin-top-medium">
+        <span class="material-icons-outlined" [style.color]="'white'">
+          location_on
+        </span>
+        <p class="footer__contacts-text">
+          100000, Республика Казахстан,
+          г.Караганда, ул.Телевизионная 10
+        </p>
+      </div>
+      <div class="footer__phone-box u-margin-top-huge">
+        <span class="material-icons-outlined" [style.color]="'white'">
+          phone
+        </span>
+        <a class="footer__phone" href="tel:+38(000)0000000">
+          <pre class="footer__contacts-text">+38(000) 000 00 00</pre></a>
+      </div>
+      <div class="footer__message-box u-margin-top-big">
+        <span class="material-icons-outlined" [style.color]="'white'">
+          email
+        </span>
+        <span class="footer__contacts-text">mail@gmail.com</span>
+      </div>
+    </div>
+    <div class="footer__social">
+      <h2 class="heading-two">Социальные сети</h2>
+      <div class="footer__icons">
+        <a class="footer__icon" href="#"><img class="footer__icon-img" src="/assets/photo/pngwing.com.png"
+            alt="photo"></a>
+        <a class="footer__icon" href="#"><img class="footer__icon-img" src="assets/photo/twitter-logo-2429 (1).png"
+            alt="photo"></a>
+        <a class="footer__icon" href="#"><img class="footer__icon-img" src="/assets/photo/instagram.png"
+            alt="photo"></a>
+        <a class="footer__icon" href="#"><img class="footer__icon-img" src="/assets/photo/pinterest.png"
+            alt="photo"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom__line"></div>
+    <p class="footer-bottom__text">© 2019 Digital Project. Все права защищены.</p>
+  </div>
+</div>

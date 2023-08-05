@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/styles/utilities';
+@import 'assets/styles/mixins';
+@import 'assets/fonts/TTHoves/stylesheet.css';
+@import 'assets/fonts/SFPro/stylesheet.css';
+@import 'assets/fonts/OpenSans/style.scss';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
+
+
+html,
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'TT Hoves';
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
