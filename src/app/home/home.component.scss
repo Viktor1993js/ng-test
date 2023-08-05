@@ -1,17 +1,37 @@
+* {
+  font-family: 'TT Hoves';
+}
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 10rem;
 
   &__icon {
+    margin-left: 13.3rem;
     width: 7rem;
   }
 
-  &__link-container {}
+  &__link-container {
+    margin-right: 15rem;
+  }
 
-  &__link {}
+  &__link {
+    margin-right: 6rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.16rem;
+    color: #333333;
+    text-decoration: none;
+    padding: 0.2rem 0 0.2rem 0;
+
+    &:hover {
+      border-top: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+    }
+  }
 }
 
-.main {
-
-}
+.main {}
