@@ -57,9 +57,9 @@
         [ngClass]="item.style">
         <div class="project__container" appActive>
           <div class="project__center">
-            <div *ngIf="item.active">
+            <div class="project__text-box" *ngIf="item.active">
               <p class="project__text" [ngClass]="item.textSize">{{item.title}}</p>
-              <div class="btn u-margin-top-small">
+              <div class="btn">
                 <button class="btn__main btn__main--transparent">
                   <p class="btn__text btn__text--white">ПОДРОБНЕЕ</p>
                   <span class="material-icons-outlined" [style.color]="'white'">
@@ -114,7 +114,7 @@
       </form>
     </div>
     <div class="form__photo-box">
-      <img class="form__photo" src="assets/photo/image 12.png" alt="photo forms" width="500rem">
+      <img class="form__photo" src="assets/photo/image 12.png" alt="photo forms">
     </div>
   </div>
 
@@ -187,3 +187,4 @@
     <p class="footer-bottom__text">© 2019 Digital Project. Все права защищены.</p>
   </div>
 </div>
+  

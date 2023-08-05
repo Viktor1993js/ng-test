@@ -12,6 +12,14 @@
   color: #BDBDBD;
 }
 
+.heading-two {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.992rem;
+  color: #FFFFFF;
+  font-family: 'TT Hoves';
+}
+
 .btn {
   width: 22.1rem;
   height: 7.1rem;
@@ -21,6 +29,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 22.1rem;
     height: 7.1rem;
     border: none;
@@ -33,8 +42,9 @@
 
   &__main--transparent {
     height: 3rem;
-    margin-top: 2rem;
     background-color: transparent;
+    transition: all 0.5s;
+    justify-content: flex-start;
 
     &:hover {
       background-color: #83838377;
@@ -148,7 +158,6 @@
   }
 
   &__text-box {
-    // width: 36%;
     max-width: 45rem;
     margin-top: 2.5rem;
   }
@@ -203,10 +212,7 @@
   justify-content: space-between;
 
 
-  &__project-box {
-    width: 100%;
-    height: 100%;
-  }
+  &__project-box {}
 
   &__main-container {
     position: relative;
@@ -239,47 +245,47 @@
 
   &__container {
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
   }
 
   &__center {
     @include absCenter;
   }
 
+  &__text-box {
+    margin-top: 4rem;
+  }
+
   &__text {
+    line-height: 6.4rem;
+    color: #FFFFFF;
+    font-family: 'TT Hoves';
+    font-weight: 700;
 
     &--one {
       font-size: 6.4rem;
-      font-weight: 700;
-      color: #FFFFFF;
-      font-family: 'TT Hoves';
     }
 
     &--two {
       font-size: 6.4rem;
-      font-weight: 700;
-      color: #FFFFFF;
-      font-family: 'TT Hoves';
     }
 
     &--three {
       font-size: 3.4rem;
-      font-weight: 700;
-      color: #FFFFFF;
-      font-family: 'TT Hoves';
+      line-height: 3.5rem;
     }
 
     &--four {
       font-size: 5.4rem;
-      font-weight: 700;
-      color: #FFFFFF;
-      font-family: 'TT Hoves';
+      line-height: 5.5rem;
     }
 
     &--five {
       font-size: 4.4rem;
-      font-weight: 700;
-      color: #FFFFFF;
-      font-family: 'TT Hoves';
+      line-height: 4.4rem;
     }
   }
 }
@@ -288,4 +294,181 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
+  margin-bottom: 11.4rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__box {
+    display: flex;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    max-height: 36.9rem;
+  }
+
+  &__container {
+    position: relative;
+    max-width: 39.5rem;
+  }
+
+  &__control {
+    width: 37rem;
+    height: 4.6rem;
+    background-color: #F3F3F3;
+    border: none;
+    outline: none;
+    padding-left: 2.3rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.743rem;
+    font-weight: 400;
+  }
+
+  &__pointer-phone {
+    position: absolute;
+    top: 1.4rem;
+    left: 13.2rem;
+    color: #C30000;
+  }
+
+  &__pointer-email {
+    position: absolute;
+    top: 1.4rem;
+    left: 6.4rem;
+    color: #C30000;
+  }
+
+  &__pointer-message {
+    position: absolute;
+    top: 1.4rem;
+    left: 10rem;
+    color: #C30000;
+  }
+
+  &__photo-box {
+    max-width: 69rem;
+    max-height: 36.9rem;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  &__container--large {
+    height: 14.6rem;
+    background-color: #F3F3F3;
+  }
+}
+
+.form-btn {
+  max-width: 39rem;
+
+  &__text {
+    margin: 2rem 0 2rem 4rem;
+    font-size: 1.4rem;
+  }
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #2C2C2C;
+  margin-top: 13rem;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5.5rem;
+    flex-wrap: wrap;
+  }
+
+  &__img-box {
+    margin-left: 11.5rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    padding-bottom: 1.5rem;
+  }
+
+  &__contacts-box {
+    margin-left: 15.5rem;
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__contacts-text {
+    font-family: 'TT Hoves';
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    width: 29rem;
+  }
+  
+  &__phone-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone {
+
+  }
+
+  &__message-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social {}
+
+  &__icons {}
+
+  &__icon {
+    margin-right: 3.5rem;
+  }
+
+  &__icon-img {
+    width: 2rem;
+  }
+}
+
+.footer-bottom {
+  width: 100%;
+  &__line {
+    width: 100%;
+    border-bottom: 0.2rem solid #a3a3a31a;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    color: #c8c8c880;
+  }
 }
