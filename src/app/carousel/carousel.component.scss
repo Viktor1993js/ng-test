@@ -13,12 +13,12 @@
 
   &__left {
     position: relative;
-    width: 32%;
+    width: 36%;
   }
 
   &__text-box {
     position: relative;
-    top: 32rem;
+    top: 35rem;
   }
 
   &__text {
@@ -32,6 +32,7 @@
     margin: 0;
     font-size: 6.4rem;
     font-weight: 700;
+    margin-top: 4rem;
   }
 
   &__btn-box {
@@ -39,7 +40,7 @@
     flex-direction: row;
     position: relative;
     align-items: center;
-    bottom: -40rem;
+    bottom: -46rem;
   }
 
   &__btn {
@@ -101,7 +102,7 @@
   }
 
   &__right {
-    width: 68%;
+    width: 64%;
     position: relative;
   }
 
@@ -114,21 +115,19 @@
   &__right-box {
     position: absolute;
     bottom: 0;
-    z-index: 1000;
   }
 
   &__btn-text {
     cursor: pointer;
     position: absolute;
     left: 4.5rem;
-    bottom: 2.8rem;
+    bottom: 1.6rem;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     font-family: 'TT Hoves';
     margin-right: 6rem;
     text-decoration: none;
     color: #333333;
-    z-index: 1111;
   }
 
   &__right-btn {
@@ -140,7 +139,6 @@
     height: 7.1rem;
     border: none;
     background-color: #fff;
-
     &:hover {
       background-color: #f9f9f9;
     }

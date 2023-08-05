@@ -1,10 +1,73 @@
+@import 'src/assets/styles/mixins';
+
 * {
   font-family: 'TT Hoves';
+}
+
+.header-large {
+  font-size: 6.4rem;
+  line-height: 6.4rem;
+  font-family: 'TT Hoves';
+  font-weight: 300;
+  color: #BDBDBD;
+}
+
+.btn {
+  width: 22.1rem;
+  height: 7.1rem;
+
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 22.1rem;
+    height: 7.1rem;
+    border: none;
+    background-color: #fff;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+
+  &__main--transparent {
+    height: 3rem;
+    margin-top: 2rem;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #83838377;
+    }
+  }
+
+  &__main--black {
+    background-color: #333333;
+
+    &:hover {
+      background-color: #535353;
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    font-family: 'TT Hoves';
+    line-height: 1.2rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+
+    &--white {
+      margin: 0;
+      color: #ffffff;
+    }
+  }
+
 }
 
 .header {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 10rem;
@@ -15,7 +78,7 @@
   }
 
   &__link-container {
-    margin-right: 15rem;
+    margin-right: 16rem;
   }
 
   &__link {
@@ -34,4 +97,195 @@
   }
 }
 
-.main {}
+.main {
+  margin: 0 12rem 0 12rem;
+
+}
+
+.about {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #FBFBFB;
+  width: 100%;
+  height: 43.5rem;
+  flex-wrap: wrap;
+
+  &__photo-box-one {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 3rem 3rem 10rem;
+    width: 24%;
+  }
+
+  &__photo-one {
+    max-width: 27rem;
+    max-height: 26.5rem;
+  }
+
+  &__photo-three {
+    z-index: 11111;
+    padding-top: 3rem;
+    max-width: 27rem;
+    max-height: 14rem;
+  }
+
+  &__photo-box-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    overflow: hidden;
+    width: 65%;
+  }
+
+  &__photo-two {
+    margin-top: 6rem;
+    margin-right: 3rem;
+    max-width: 27rem;
+    max-height: 34.5rem;
+  }
+
+  &__text-box {
+    // width: 36%;
+    max-width: 45rem;
+    margin-top: 2.5rem;
+  }
+
+  &__text {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    font-family: 'TT Hoves';
+    font-weight: 300;
+    color: #BDBDBD;
+  }
+
+  &__text-other {
+    max-width: 40rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+}
+
+.tasks {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__number {
+    margin-right: 2.5rem;
+    font-size: 20rem;
+    font-weight: 900;
+    color: #F2F2F2;
+    font-family: 'SF Pro Display';
+  }
+
+  &__text {
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+  }
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+  &__project-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__main-container {
+    position: relative;
+  }
+
+  &__img-one {
+    width: 55rem;
+    height: 25.5rem;
+  }
+
+  &__img-two {
+    width: 55rem;
+    height: 25.5rem;
+  }
+
+  &__img-three {
+    width: 24.5rem;
+    height: 25.5rem;
+  }
+
+  &__img-four {
+    width: 46.5rem;
+    height: 25.5rem;
+  }
+
+  &__img-five {
+    width: 36rem;
+    height: 25.5rem;
+  }
+
+  &__container {
+    height: 100%;
+  }
+
+  &__center {
+    @include absCenter;
+  }
+
+  &__text {
+
+    &--one {
+      font-size: 6.4rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      font-family: 'TT Hoves';
+    }
+
+    &--two {
+      font-size: 6.4rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      font-family: 'TT Hoves';
+    }
+
+    &--three {
+      font-size: 3.4rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      font-family: 'TT Hoves';
+    }
+
+    &--four {
+      font-size: 5.4rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      font-family: 'TT Hoves';
+    }
+
+    &--five {
+      font-size: 4.4rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      font-family: 'TT Hoves';
+    }
+  }
+}
+
+.project-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
