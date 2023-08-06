@@ -24,11 +24,11 @@ export class HomeComponent implements OnInit {
   ];
 
   projects = [
-    { id: 1, active: false, title: 'ДОСУГОВЫЙ ЦЕНТР 1', url: '../assets/photo/image 15.png', style: 'project__img-one', textSize: 'project__text--one' },
-    { id: 2, title: 'ДОСУГОВЫЙ ЦЕНТР 2', url: '../assets/photo/image 15.png', style: 'project__img-two', textSize: 'project__text--two' },
-    { id: 3, title: 'ДОСУГОВЫЙ ЦЕНТР 3', url: '../assets/photo/image 16.png', style: 'project__img-three', textSize: 'project__text--three' },
-    { id: 4, title: 'ДОСУГОВЫЙ ЦЕНТР 4', url: '../assets/photo/image 17.png', style: 'project__img-four', textSize: 'project__text--four' },
-    { id: 5, title: 'ДОСУГОВЫЙ ЦЕНТР 5', url: '../assets/photo/image 18.png', style: 'project__img-five', textSize: 'project__text--five' },
+    { id: 1, active: false, title: 'ДОСУГОВЫЙ ЦЕНТР 1', url: 'assets/photo/image 15.png', style: 'project__img-one', textSize: 'project__text--one' },
+    { id: 2, title: 'ДОСУГОВЫЙ ЦЕНТР 2', url: 'assets/photo/image 15.png', style: 'project__img-two', textSize: 'project__text--two' },
+    { id: 3, title: 'ДОСУГОВЫЙ ЦЕНТР 3', url: 'assets/photo/image 16.png', style: 'project__img-three', textSize: 'project__text--three' },
+    { id: 4, title: 'ДОСУГОВЫЙ ЦЕНТР 4', url: 'assets/photo/image 17.png', style: 'project__img-four', textSize: 'project__text--four' },
+    { id: 5, title: 'ДОСУГОВЫЙ ЦЕНТР 5', url: 'assets/photo/image 18.png', style: 'project__img-five', textSize: 'project__text--five' },
   ];
 
   active: boolean = false;
