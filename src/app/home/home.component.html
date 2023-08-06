@@ -5,7 +5,6 @@
   </div>
 </div>
 
-
 <div class="main">
   <app-carousel></app-carousel>
   <div class="about">
@@ -139,12 +138,12 @@
   <div class="footer__top">
     <div class="footer__img-box"><img class="footer__img" src="assets/photo/Group 11 1.png" alt="Footer-logo"></div>
     <div class="footer__links">
-      <h2 class="heading-two">Информация</h2>
+      <h2 class="heading-two u-margin-bottom-large">Информация</h2>
       <a class="footer__link" href="#" *ngFor="let item of links">{{item.title}}</a>
     </div>
     <div class="footer__contacts-box">
       <h2 class="heading-two">Контакты</h2>
-      <div class="footer__contacts u-margin-top-medium">
+      <div class="footer__contacts">
         <span class="material-icons-outlined" [style.color]="'white'">
           location_on
         </span>
@@ -153,14 +152,14 @@
           г.Караганда, ул.Телевизионная 10
         </p>
       </div>
-      <div class="footer__phone-box u-margin-top-huge">
+      <div class="footer__phone-box">
         <span class="material-icons-outlined" [style.color]="'white'">
           phone
         </span>
         <a class="footer__phone" href="tel:+38(000)0000000">
           <pre class="footer__contacts-text">+38(000) 000 00 00</pre></a>
       </div>
-      <div class="footer__message-box u-margin-top-big">
+      <div class="footer__message-box">
         <span class="material-icons-outlined" [style.color]="'white'">
           email
         </span>
@@ -187,4 +186,3 @@
     <p class="footer-bottom__text">© 2019 Digital Project. Все права защищены.</p>
   </div>
 </div>
-  

@@ -29,7 +29,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     ReactiveFormsModule
   ],
-  providers: [MatIconModule],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
